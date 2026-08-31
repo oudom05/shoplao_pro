@@ -6,7 +6,7 @@ class OrderItem {
   final String status; // 'ຈ່າຍແລ້ວ', 'ລໍຖ້າຈ່າຍ', 'ຍົກເລີກ'
   final double depositAmount;
 
-  OrderItem({
+ OrderItem({
     required this.customerName,
     required this.whatsappNumber,
     required this.productName,
