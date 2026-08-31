@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'views/dashboard_view.dart'; 
 import 'views/inventory_view.dart';
 import 'views/order_view.dart';
-import 'views/all_orders_view.dart';// ໂຫຼດໜ້າ Dashboard ທີ່ເຮົາສ້າງ
-
+import 'views/all_orders_view.dart';
+import 'views/analytics_view.dart';
+import 'views/store_setting.dart';
 void main() {
   runApp(const SalesManagementApp());
 }
@@ -45,8 +46,8 @@ class _MainNavigationViewState extends State<MainNavigationView> {
     const InventoryView(),
     const OrderView(), // ໜ້າຈັດການອໍເດີ້ (OrderView)
     const DashboardView(), // ໜ້າແດັດບອດທີ່ເຮົາเพิ่งສ້າງ
-    const Center(child: Text('ໜ້າວິເຄາະ (Analytics)')),
-    const Center(child: Text('ໜ້າຕັ້ງຄ່າ (Settings)')),
+    const AnalyticsView(),
+    const StoreSettingView(),
   ];
 
   @override
